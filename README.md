@@ -4,6 +4,8 @@ SImple Graphic Accelerator
 A 2D graphic accelerator from scratch. This project doesn't use any IP core.
 The written SDRAM controller, uses burst commands as far as possible.
 
+Output video signal: SVGA Signal 800x600 @ 56 Hz timing, RGB565 pixel format
+
 Current drawing abilities:
  - Filling rectangle
  - Drawing line (by bresenham algorithm)
