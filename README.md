@@ -20,3 +20,5 @@ This board has a xc6slx9-2tqg144c (It seems this type hasn't internal hard DDR c
 I have brought some images of this example below.
 ![img1](document/1658323557929.jpg)
 ![img2](document/1658323557936.jpg)
+Used Board:
+![img2](document/xilinx-fpga-zr-tech-designed-by-wxeda.jpg)
