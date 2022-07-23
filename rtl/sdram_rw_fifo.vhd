@@ -88,7 +88,7 @@ begin
     end process;
     --read pointer to binary conversion
     read_ptr_bin(fifo_depth_width - 1) <= read_ptr_gray_sync_1(fifo_depth_width - 1);
-    gray2binW : for i in fifo_depth_width - 2 downto 0 generate
+    gray2binR : for i in fifo_depth_width - 2 downto 0 generate
         read_ptr_bin(i) <= read_ptr_bin(i + 1) xor read_ptr_gray_sync_1(i);
     end generate;
     --set full flag
@@ -122,7 +122,7 @@ begin
     end process;
     --write pointer to binary conversion
     write_ptr_bin(fifo_depth_width - 1) <= write_ptr_gray_sync_1(fifo_depth_width - 1);
-    gray2binR : for i in fifo_depth_width - 2 downto 0 generate
+    gray2binW : for i in fifo_depth_width - 2 downto 0 generate
         write_ptr_bin(i) <= write_ptr_bin(i + 1) xor write_ptr_gray_sync_1(i);
     end generate;
     --set empty flag
