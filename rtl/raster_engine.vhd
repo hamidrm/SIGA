@@ -88,7 +88,7 @@ begin
 						re_h_draw              <= 0;
 						re_state               <= RE_STATE_FILL_RECT; --Set state to fill rect
 					when RASTER_FILL_RECT_BMP =>
-						--We are going to fill a rectancge
+						--We are going to draw a bitmap
 						frame_buffer_cmd.color <= re_color;                         --Default Color
 						re_x_draw              <= to_integer(unsigned(re_point.x)); --Start point of drawing
 						re_y_draw              <= to_integer(unsigned(re_point.y));
