@@ -10,18 +10,18 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.numeric_std.all;
 package siga_utilities is
 
-	-------------------------------------------------------------------------
-	-- Types
-	-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-- Types
+-------------------------------------------------------------------------
 
-	type mem_mul_r_14b_t is array (0 to 599) of std_logic_vector(13 downto 0);
-	type siga_re_cmd_t is (RASTER_FILL_RECT, RASTER_DRAW_LINE, RASTER_DRAW_CIRCLE, RASTER_FILL_CIRCLE, RASTER_FILL_RECT_BMP);
-	subtype siga_re_params_t is integer range -800 to 800;
+type mem_mul_r_14b_t is array (0 to 599) of std_logic_vector(13 downto 0);
+type siga_re_cmd_t is (RASTER_FILL_RECT, RASTER_DRAW_LINE, RASTER_DRAW_CIRCLE, RASTER_FILL_CIRCLE, RASTER_FILL_RECT_BMP);
+subtype siga_re_params_t is integer range -800 to 800;
 
-	type siga_point2_t is
-	record
-	x : std_logic_vector(9 downto 0); -- [0 to 799]
-	y : std_logic_vector(9 downto 0); -- [0 to 599]
+type siga_point2_t is
+record
+x : std_logic_vector(9 downto 0); -- [0 to 799]
+y : std_logic_vector(9 downto 0); -- [0 to 599]
 end record;
 
 type siga_rgb_t is
