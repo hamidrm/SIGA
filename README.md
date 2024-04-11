@@ -6,10 +6,9 @@ SIGA is a 2D graphic accelerator developed from scratch, without the use of any 
 
 - SVGA Signal: 800x600 resolution @ 56 Hz timing
 - Pixel Format: RGB565
-- Current Drawing Abilities:
 
-### Filling rectangles
-
+### Current Drawing Abilities:
+- Filling rectangles
 - Drawing lines (implemented using the Bresenham algorithm)
 - Drawing circles (implemented using the Bresenham algorithm)
 - Filling circles (implemented using the Bresenham algorithm)
